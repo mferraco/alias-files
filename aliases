@@ -1,0 +1,21 @@
+# Aliases for commonly used terminal commands
+
+# Navigation
+
+alias home-nav="cd ~/"
+alias ssh-nav="cd ~/.ssh"
+
+
+# Git
+
+alias gs="git status"
+alias gb="git branch"
+alias ga="git add"
+alias gc="git commit -m "
+alias gpo="git push origin"
+alias gp="git push"
+alias gplo="git pull origin master"
+alias gpl="git pull"
+alias gbd="git branch -D"
+alias gd="git diff"
+alias gco="git checkout"

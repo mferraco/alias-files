@@ -5,7 +5,6 @@
 alias home-nav="cd ~/"
 alias ssh-nav="cd ~/.ssh"
 
-
 # Git
 
 alias gs="git status"
@@ -14,8 +13,13 @@ alias ga="git add"
 alias gc="git commit -m "
 alias gpo="git push origin"
 alias gp="git push"
-alias gplo="git pull origin master"
+alias gplo="git pull origin"
 alias gpl="git pull"
 alias gbd="git branch -D"
 alias gd="git diff"
 alias gco="git checkout"
+alias gl="git log --oneline"
+
+openpr() {
+	open $REPO/compare/$1…$(git rev-parse --abbrev-ref HEAD)?expand=1
+}

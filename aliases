@@ -2,7 +2,7 @@
 
 # Navigation
 
-alias home-nav="cd ~/"
+alias ~="cd ~/"
 alias ssh-nav="cd ~/.ssh"
 
 # Git

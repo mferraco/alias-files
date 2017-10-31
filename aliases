@@ -19,7 +19,17 @@ alias gbd="git branch -D"
 alias gd="git diff"
 alias gco="git checkout"
 alias gl="git log --oneline"
+alias gpob="push_current_branch"
+
 
 openpr() {
-	open $REPO/compare/$1…$(git rev-parse --abbrev-ref HEAD)?expand=1
+	open $REPO/compare/$1…$(get_current_branch)?expand=1
+}
+
+push_current_branch() {
+	git push origin $(get_current_branch)
+}
+
+get_current_branch() {
+	git branch | grep -e "^*" | cut -d' ' -f 2
 }

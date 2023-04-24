@@ -1,17 +1,18 @@
 # Aliases
 
-A small file containing aliases for commonly typed terminal commands.  This can speed up typing and increase productivity.
+A small file containing aliases for commonly typed terminal commands.
 
 ## Installation Instructions
 
 1. Clone the repo.
-2. Open `~/.bash_profile`
-3. Add `source <path_to_aliases_file>` to your bash profile.
-4. Type `source ~/.bash_profile` into your terminal for the changes to take affect in your current session.
+2. Open `~/.zshrc`
+3. Add `source <path_to_aliases_file>`
+4. `source ~/.zshrc` for the changes to take affect in your current session.
 
-### openpr <base_branch>
+### openpr
 
-To use this command, you must add the `$REPO` environment variable to your session.
+To use this command, you must add the `$GITHUB_ORG` environment variable.
 
- 1. Open `~/.bash_profile`
- 2. Add `export REPO=<repo_url>`  above where you source your alias file
+ 1. Open `~/.zshrc`
+ 2. Add `export GITHUB_ORG=<org_url>`
+ 3. source `~/.zshrc` for the changes to take affect in your current session
